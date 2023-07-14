@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;700;800&display=swap');
+
+* {
+
+    font-family: 'Space Mono', monospace;
+
+}
+
+body {
+    max-width: 1140px;
+    margin: 0px auto;
+}
+
+/* nav syle */
+
+nav {
+
+
+
+    padding-top: 30px;
+}
+
+.nav-title {
+    font-size: 24px;
+}
+
+/* banner syle */
+.banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.banner-left img {
+    width: 80%;
+
+}
+
+.banner-left,
+.banner-right {
+    width: 50%;
+}
+
+.banner-title {
+    color: #333;
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.banner-des {
+    color: #4F4F4F;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 30px 0px;
+    width: 62%;
+}
+
+.banner-btn {
+    background: #333;
+    padding: 20px 40px;
+    color: white;
+    margin-top: 30px;
+    border: 0;
+}
+
+/* responsive for mobile device/smaller device */
+@media screen and (max-width:576px) {
+
+    section {
+
+        padding: 20px 20px;
+
+    }
+
+    nav,
+    .banner-container {
+        flex-direction: column;
+
+    }
+
+    .banner-left img {
+        width: 100%;
+
+
+    }
+
+    .banner-des {
+        width: 100%;
+    }
+
+    .nav-title {
+        margin-bottom: 100px;
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .banner-title {
+        font-size: 48px;
+    }
+
+    .banner-left,
+    .banner-right {
+        width: 100%;
+    }
+}
